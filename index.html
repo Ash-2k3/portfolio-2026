@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ashwath Kannan — Software Engineer specializing in backend development, APIs, and system reliability. GSoC 2023 alumnus, currently at Sage (formerly Fyle)." />
+  <meta property="og:title" content="Ashwath Kannan — Software Engineer" />
+  <meta property="og:description" content="Backend engineer building reliable systems. GSoC 2023 · Sage (Fyle) · Open Source contributor." />
+  <meta property="og:type" content="website" />
+  <title>Ashwath Kannan — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <!-- Animated background blobs -->
+  <div class="blob-container" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- ── NAVBAR ─────────────────────────────── -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">AK</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#opensource" class="nav-item">Open Source</a></li>
+          <li><a href="#contact" class="nav-cta nav-item">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for exciting opportunities
+        </div>
+        <h1 class="hero-name">
+          Ashwath <span>Kannan</span>
+        </h1>
+        <p class="hero-role">Software Engineer &middot; Backend &middot; Open Source</p>
+        <p class="hero-tagline">
+          Building reliable backend systems at Sage &middot; GSoC 2023 Alumnus &middot; Open Source Contributor
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="view-work-btn">
+            <i data-lucide="layout-grid" style="width:16px;height:16px;"></i>
+            View My Work
+          </a>
+          <a href="assets/resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener" id="resume-btn">
+            <i data-lucide="file-text" style="width:16px;height:16px;"></i>
+            Resume
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Ash-2k3" class="social-link" target="_blank" rel="noopener" aria-label="GitHub" id="github-hero">
+            <i data-lucide="github" style="width:18px;height:18px;"></i>
+          </a>
+          <a href="https://linkedin.com/in/ashwathkannan2k3" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn" id="linkedin-hero">
+            <i data-lucide="linkedin" style="width:18px;height:18px;"></i>
+          </a>
+          <a href="mailto:ash.me.cse@gmail.com" class="social-link" aria-label="Email" id="email-hero">
+            <i data-lucide="mail" style="width:18px;height:18px;"></i>
+          </a>
+        </div>
+        <div class="hero-stats reveal-stagger">
+          <div class="stat-card glass-card">
+            <div class="stat-value">Sage (Fyle)</div>
+            <div class="stat-label">Current Company</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-value">GSoC 2023</div>
+            <div class="stat-label">Google Summer of Code</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-value">2+ Years</div>
+            <div class="stat-label">Open Source Contribution</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <span class="section-label">Who I Am</span>
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid reveal">
+        <div class="about-avatar glass-card">
+          <img src="assets/profile.jpg" alt="Ashwath Kannan" class="about-avatar-img" />
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a Software Engineer focused on backend development, APIs, and system reliability.
+            I currently work at <strong style="color:var(--text-primary)">Sage</strong> (formerly Fyle, acquired July 2025),
+            where I build and improve features used across global expense management products — from
+            internal tooling and card operations to API pipelines and deduplication systems.
+          </p>
+          <p>
+            Before full-time, I completed <strong style="color:var(--text-primary)">Google Summer of Code 2023</strong>
+            with the Oppia Foundation, shipped backend automation at EPACK Prefab that cut design cycles from
+            10 days to 2–3 days, and have been an active open-source contributor for over 2 years.
+          </p>
+          <p>
+            What drives me is solving practical engineering problems — making systems faster, cleaner,
+            and easier for teams to maintain and extend.
+          </p>
+          <div class="about-chips">
+            <span class="chip">Python</span>
+            <span class="chip">Flask</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Angular</span>
+            <span class="chip">Redis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ─────────────────────────── -->
+  <section id="experience">
+    <div class="container">
+      <span class="section-label">Work History</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="exp-list reveal-stagger">
+
+        <!-- Sage (Fyle) -->
+        <article class="exp-card glass-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">
+                <a href="https://www.sage.com" target="_blank" rel="noopener">Sage <span style="color:var(--text-muted);font-weight:400;font-size:0.875rem">(formerly Fyle)</span></a>
+              </div>
+              <div class="exp-role">Software Engineer — Backend</div>
+            </div>
+            <div class="exp-meta">
+              <div class="exp-period">Nov 2024 – Present</div>
+              <div class="exp-location">Bengaluru, India · Remote</div>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built self-serve internal tooling (Appsmith) for Customer Support to manage high-volume corporate card operations — eliminating developer intervention and reducing related support requests from <strong>30+/month to near zero</strong>.</li>
+            <li>Identified root cause of <strong>50%+ duplicate corporate card creation</strong> stemming from concurrent Amex and Yodlee feed activity; engineered auto-conversion and deduplication logic across both card ingestion flows.</li>
+            <li>Delivered a suite of Amex Virtual Card improvements — CRUD notification system, card detail editing, and monthly spend limit enforcement — driving <strong>100%+ growth in virtual card usage</strong> within one month of release.</li>
+            <li>Hardened a corporate card data pipeline by integrating GPG-based public/private key encryption and configuring Docker volume mounts for secure production secret management.</li>
+            <li>Investigated a payment processor duplicate transaction ID issue through production data analysis; authored an Engineering Design document and landed on a data-backed solution.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Redis</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Grafana</span>
+            <span class="tag">Appsmith</span>
+          </div>
+        </article>
+
+        <!-- Oppia Foundation -->
+        <article class="exp-card glass-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">
+                <a href="https://www.oppia.org" target="_blank" rel="noopener">Oppia Foundation</a>
+              </div>
+              <div class="exp-role">Software Development Contractor</div>
+              <div class="exp-sub-role">Volunteer · Remote</div>
+            </div>
+            <div class="exp-meta">
+              <div class="exp-period">Jul 2024 – May 2025</div>
+              <div class="exp-location">Mountain View, CA · Remote</div>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Led a team of contributors to resolve high-priority issues using Angular, Apache Beam Jobs, and Python within the Oppia open-source learning platform.</li>
+            <li>Authored technical tutorials on Beam Jobs and debugging workflows, simulating real-world engineering challenges for onboarding contributors.</li>
+            <li>Ensured tutorial accuracy and implementation alignment through close collaboration with core maintainers and the development team.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Angular</span>
+            <span class="tag">Apache Beam</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Open Source</span>
+          </div>
+        </article>
+
+        <!-- EPACK Prefab -->
+        <article class="exp-card glass-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">EPACK Prefab</div>
+              <div class="exp-role">Software Engineer Intern</div>
+            </div>
+            <div class="exp-meta">
+              <div class="exp-period">Jul 2024 – Oct 2024</div>
+              <div class="exp-location">Noida, India</div>
+            </div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built an auto-generation tool for STAAD structural file syntax, reducing building design time from <strong>10 days to 2–3 days</strong>.</li>
+            <li>Developed a Panel Pin System design tool, reducing the design cycle from <strong>3–4 days to 4 hours</strong>.</li>
+            <li>Deployed the first phase on AWS EC2 with Gunicorn and Nginx; participated in code reviews to ensure quality and maintainability.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="tag">Python</span>
+            <span class="tag">AWS EC2</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Gunicorn</span>
+            <span class="tag">Automation</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ────────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+      <span class="section-label">What I've Built</span>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="projects-grid reveal-stagger">
+
+        <!-- GSoC 2023 -->
+        <article class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">🌟</div>
+            <div class="project-links">
+              <a href="https://medium.com/@ash.me.cse/my-google-summer-of-code-2023-journey-with-oppia-ee93a6fc312d" class="project-link" target="_blank" rel="noopener" aria-label="GSoC Link" title="Google Summer of Code">
+                <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">GSoC 2023 — Oppia Foundation</div>
+          <div class="project-metric">
+            <i data-lucide="trending-up" style="width:12px;height:12px;"></i>
+            60% efficiency gain
+          </div>
+          <p class="project-desc">
+            Developed 6 full-stack features for Oppia's contributor dashboard, enhancing the translation review workflow.
+            Collaborated with the Design Team on UI/UX, conducted user surveys to drive product decisions,
+            and improved unit test coverage by 10%.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Angular</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Full-Stack</span>
+          </div>
+        </article>
+
+        <!-- OONI-ChainWatch -->
+        <article class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">🔐</div>
+            <div class="project-links">
+              <a href="https://github.com/Ash-2k3/OONI-ChainWatch" class="project-link" target="_blank" rel="noopener" aria-label="GitHub" title="View on GitHub">
+                <i data-lucide="github" style="width:14px;height:14px;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">OONI-ChainWatch</div>
+          <div class="project-metric">
+            <i data-lucide="shield" style="width:12px;height:12px;"></i>
+            Certificate Transparency Research
+          </div>
+          <p class="project-desc">
+            Researched and developed a Python script to extract and parse X.509 certificate chains from OONI
+            web connectivity measurements using gzip and JSON libraries for efficient .jsonl.gz file processing.
+            Submitted valid certificate chains to Let's Encrypt's CT log with rate-limiting, exploring
+            real-world certificate transparency pipelines.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Cryptography</span>
+            <span class="tag">X.509</span>
+            <span class="tag">CT Log</span>
+          </div>
+        </article>
+
+        <!-- EPACK STAAD Tool -->
+        <article class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">🏗️</div>
+            <div class="project-links">
+              <a href="https://optibuild.orbitaim.io/" class="project-link" target="_blank" rel="noopener" aria-label="OptiBuild" title="View Project">
+                <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">STAAD File Auto-Generator</div>
+          <div class="project-metric">
+            <i data-lucide="clock" style="width:12px;height:12px;"></i>
+            10 days → 2–3 days
+          </div>
+          <p class="project-desc">
+            Built an automated tool to generate STAAD Pro structural file syntax for building designs at EPACK Prefab.
+            Dramatically reduced the engineering design cycle and was deployed to production on AWS EC2 with
+            Gunicorn and Nginx in its first phase.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">AWS EC2</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Automation</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────── -->
+  <section id="skills">
+    <div class="container">
+      <span class="section-label">Technical Toolkit</span>
+      <h2 class="section-title">Skills &amp; <span>Stack</span></h2>
+      <div class="skills-grid reveal-stagger">
+
+        <div class="skill-group glass-card">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-items">
+            <span class="skill-item"><span class="skill-dot"></span>Python</span>
+            <span class="skill-item"><span class="skill-dot"></span>TypeScript</span>
+            <span class="skill-item"><span class="skill-dot"></span>Kotlin</span>
+            <span class="skill-item"><span class="skill-dot"></span>SQL</span>
+            <span class="skill-item"><span class="skill-dot"></span>Bash</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card">
+          <div class="skill-group-title">Frameworks &amp; APIs</div>
+          <div class="skill-items">
+            <span class="skill-item"><span class="skill-dot"></span>Flask</span>
+            <span class="skill-item"><span class="skill-dot"></span>Angular</span>
+            <span class="skill-item"><span class="skill-dot"></span>Apache Beam</span>
+            <span class="skill-item"><span class="skill-dot"></span>REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card">
+          <div class="skill-group-title">Infrastructure &amp; DevOps</div>
+          <div class="skill-items">
+            <span class="skill-item"><span class="skill-dot"></span>AWS (EC2)</span>
+            <span class="skill-item"><span class="skill-dot"></span>Docker</span>
+            <span class="skill-item"><span class="skill-dot"></span>Nginx</span>
+            <span class="skill-item"><span class="skill-dot"></span>Gunicorn</span>
+            <span class="skill-item"><span class="skill-dot"></span>Grafana</span>
+            <span class="skill-item"><span class="skill-dot"></span>Linux</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card">
+          <div class="skill-group-title">Databases &amp; Caching</div>
+          <div class="skill-items">
+            <span class="skill-item"><span class="skill-dot"></span>PostgreSQL</span>
+            <span class="skill-item"><span class="skill-dot"></span>Redis</span>
+            <span class="skill-item"><span class="skill-dot"></span>Performance Tuning</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card">
+          <div class="skill-group-title">Tools &amp; Platforms</div>
+          <div class="skill-items">
+            <span class="skill-item"><span class="skill-dot"></span>Git / GitHub</span>
+            <span class="skill-item"><span class="skill-dot"></span>Appsmith</span>
+            <span class="skill-item"><span class="skill-dot"></span>SendGrid</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass-card">
+          <div class="skill-group-title">Concepts</div>
+          <div class="skill-items">
+            <span class="skill-item"><span class="skill-dot"></span>Microservices</span>
+            <span class="skill-item"><span class="skill-dot"></span>API Design</span>
+            <span class="skill-item"><span class="skill-dot"></span>GPG Encryption</span>
+            <span class="skill-item"><span class="skill-dot"></span>Cert Transparency</span>
+            <span class="skill-item"><span class="skill-dot"></span>System Reliability</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── OPEN SOURCE & ACHIEVEMENTS ─────────── -->
+  <section id="opensource">
+    <div class="container">
+      <span class="section-label">Community &amp; Recognition</span>
+      <h2 class="section-title">Open Source &amp; <span>Achievements</span></h2>
+      <div class="os-grid reveal-stagger">
+
+        <div class="os-card glass-card">
+          <div class="os-card-header">
+            <div class="os-badge">🌞</div>
+            <div>
+              <div class="os-card-title">Google Summer of Code 2023</div>
+              <div class="os-card-sub">Oppia Foundation · May – Nov 2023</div>
+            </div>
+          </div>
+          <p class="os-card-desc">
+            Selected as a GSoC contributor with the Oppia Foundation. Built and shipped 6 full-stack features
+            for the contributor dashboard, improving the translation review workflow efficiency by 60%.
+          </p>
+        </div>
+
+        <div class="os-card glass-card">
+          <div class="os-card-header">
+            <div class="os-badge">🔓</div>
+            <div>
+              <div class="os-card-title">Oppia Open Source Contributor</div>
+              <div class="os-card-sub">2+ years · Ongoing</div>
+            </div>
+          </div>
+          <p class="os-card-desc">
+            Long-term volunteer contributor to Oppia — an open-source interactive learning platform.
+            Contributed features, bug fixes, authored developer tutorials, and mentored new contributors.
+          </p>
+        </div>
+
+        <div class="os-card glass-card">
+          <div class="os-card-header">
+            <div class="os-badge">🚀</div>
+            <div>
+              <div class="os-card-title">GDSC Core Team Member</div>
+              <div class="os-card-sub">Google Developer Student Clubs · Sep 2022 – May 2023</div>
+            </div>
+          </div>
+          <p class="os-card-desc">
+            Core team member of the Google Developer Student Club, helping organize technical sessions,
+            workshops, and community events for developers in the university ecosystem.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <h3 style="font-size:1.1rem;font-weight:600;color:var(--text-secondary);margin-top:64px;margin-bottom:0;">
+        Certifications
+      </h3>
+      <div class="certs-grid reveal-stagger">
+        <div class="cert-item">
+          <span class="cert-icon">🏆</span>
+          <span class="cert-name">HackerRank — Problem Solving (Intermediate)</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">🤖</span>
+          <span class="cert-name">Google — Programming Fundamentals in Kotlin</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">📱</span>
+          <span class="cert-name">Meta — Android Mobile App Development</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">📋</span>
+          <span class="cert-name">Meta — Version Control</span>
+        </div>
+        <div class="cert-item">
+          <span class="cert-icon">🏦</span>
+          <span class="cert-name">JPMorgan Chase — Virtual Experience Program</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <div class="contact-card glass-card reveal">
+        <p>
+          I'm always open to backend engineering roles at product companies, interesting open-source collaborations,
+          or just a good conversation about systems and engineering. Feel free to reach out!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:ash.me.cse@gmail.com" class="contact-link" id="contact-email">
+            <i data-lucide="mail" style="width:16px;height:16px;"></i>
+            ash.me.cse@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/ashwathkannan2k3" class="contact-link" target="_blank" rel="noopener" id="contact-linkedin">
+            <i data-lucide="linkedin" style="width:16px;height:16px;"></i>
+            LinkedIn
+          </a>
+          <a href="https://github.com/Ash-2k3" class="contact-link" target="_blank" rel="noopener" id="contact-github">
+            <i data-lucide="github" style="width:16px;height:16px;"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p>Built with <span>♥</span> by Ashwath Kannan &copy; 2025</p>
+        <div class="footer-links">
+          <a href="https://github.com/Ash-2k3" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/ashwathkannan2k3" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
